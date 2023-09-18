@@ -1,0 +1,16 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+<h1> Login as User </h1>
+<form class="form-control-sm bg-dark text-white" action="{% url 'user_auth:authenticate_user' %}" method="post">
+    {% csrf_token %}
+    <label>Username</label>
+    <input type="text" name="username" placeholder="User" required>
+    <br /><br />
+    <label>Password</label>
+    <input type="password" name="password" required>
+    <br /><br />
+    <input type="submit" value="Login" />
+</form>
+
+{% endblock %}

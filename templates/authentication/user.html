@@ -1,0 +1,10 @@
+{% extends 'polls/base.html' %}
+
+{% block content %}
+<h1 class="text-center"> Welcome, {{username}} </h1>
+<div class="text-center">
+    <a href="{% url 'polls:index'%}">
+        <button type="button" class="btn btn-outline-success ">Continue to Polls</button>
+    </a>
+</div>
+{% endblock %}

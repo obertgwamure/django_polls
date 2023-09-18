@@ -1,0 +1,12 @@
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: grey;
+ }
+
+.login-link {
+    color: red;
+}
